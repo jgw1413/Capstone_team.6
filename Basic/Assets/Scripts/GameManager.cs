@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
             {   // enemy를 눌렀을 때
                 EnemyInfo targetInfo = target.GetComponent<EnemyInfo>();  // EnemyInfo를 가져옴
                 targetInfo.getDamage();  // EnemyInfo의 getDamage() 메소드 호출
-                targetInfo.EnemyDeathEffect();  // EnemyInfo의 EnemyDeathEffect() 메소드 호출
+                targetInfo.EnemyDeathEffect();  // 적 죽음 파티클 실행
                 if (targetInfo.isRightResult())
                 {   // 클릭한 enemy가 false면 true 반환, true면 false 반환
                     NextLevel();    // true를 얻어옴(정답) = 다음 레벨

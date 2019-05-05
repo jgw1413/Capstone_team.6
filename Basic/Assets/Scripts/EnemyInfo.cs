@@ -9,10 +9,14 @@ public class EnemyInfo : MonoBehaviour
     NavMeshAgent pathfinder;    // 길 찾기 관리
     Transform target;   // 플레이어 위치
 
+    public ParticleSystem spawnEffect;   // 적 생성 이펙트
+    public ParticleSystem deathEffect;  // 적 죽음 이펙트
+
     private bool result;
 
     void Start()
     {
+        EnemySpawnEffect();  // 적 스폰 이펙트 메소드 호출
         pathfinder = GetComponent<NavMeshAgent>();
         // pathfinder의 레퍼런스를 얻음
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -49,6 +53,11 @@ public class EnemyInfo : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    void EnemySpawnEffect()  // 적 생성 이펙트
+    {
+        Instantiate(spawnEffect, transform.position, transform.rotation);
+    }
+
     public void getDamage()  // ??
     {
         gameObject.SetActive(false);
@@ -56,7 +65,7 @@ public class EnemyInfo : MonoBehaviour
 
     public void EnemyDeathEffect()  // 적 죽음 이펙트
     {
-
+        Instantiate(deathEffect, transform.position, transform.rotation);
     }
 
     public bool isRightResult()     // 답이 아닌지 맞는지 리턴
