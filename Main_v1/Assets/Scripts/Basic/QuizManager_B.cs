@@ -20,25 +20,25 @@ public class QuizManager_B : MonoBehaviour
 
         // 문제 추가
         num = 0;
-        dictionary.Add(num, new Item_B(num, 2,
-            "한국의 수도는 ( )이다.", "대전", "부산", "서울", "광주"));
+        dictionary.Add(num, new Item_B(num, 1,
+            "한국의 수도는 ??", "대전", "서울", "부산", "광주"));
         num = 1;
-        dictionary.Add(num, new Item_B(num, 3,
-            "사과는 영어로 ( )이다.", "orange", "apply", "sa", "apple"));
+        dictionary.Add(num, new Item_B(num, 2,
+            "사과는 영어로 ??.", "orange", "apply", "apple", "banana"));
         num = 2;
         dictionary.Add(num, new Item_B(num, 0,
             "1  2  4  8 ( )", "16", "1", "2", "3"));
         num = 3;
-        dictionary.Add(num, new Item_B(num,3,
-            "그리스의 수도는 ( )이다.", "몽", "뭉", "멍", "아테네"));
+        dictionary.Add(num, new Item_B(num, 0,
+            "그리스의 수도는 ??.", "아테네", "파트라스", "케르키라", "요아니나"));
         num = 4;
-        dictionary.Add(num, new Item_B(num,0,
-            "겨울에 많이 사용하는 끈은?", "뜨끈뜨끈", "뜨끔", "야", "옹"));
+        dictionary.Add(num, new Item_B(num, 2,
+            "OS가 아닌 것은?", "Windows", "Linux", "Java", "Mac"));
         num = 5;
-        dictionary.Add(num, new Item_B(num,2,
-            "모자 여러개가 모여 있으면?", "루피", "상디", "밀짚모자", "조로"));
+        dictionary.Add(num, new Item_B(num, 2,
+            "일본어인 '부타(豚)'를 한국어로 번역하면 무슨 말 일까요?", "닭", "소", "돼지", "물고기"));
         num = 6;
-        dictionary.Add(num, new Item_B(num,3,
+        dictionary.Add(num, new Item_B(num, 3,
             "가장 뜨거운 과일은?", "멜론", "수박", "딸기", "천도복숭아"));
 
         RandomNumber();
