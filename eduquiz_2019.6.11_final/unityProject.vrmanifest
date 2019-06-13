@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.math1.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\다운로드\\eduquiz_2019.6.10\\eduquiz_2019.6.11 final\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "math1 [Testing]"
+        }
+      }
+    }
+  ]
+}
